@@ -3,16 +3,16 @@ import math
 
 def calculate_volume_of_cone():
 # Calls both inputs and then calculates the volume
-    first_leg = get_leg_value("Input the value of the first leg")
-    second_leg = get_leg_value("Input the value of the second leg")
+    first_leg = input_int_value("Input the value of the first leg")
+    second_leg = input_int_value("Input the value of the second leg")
     print(cone_volume(max(first_leg, second_leg), min(first_leg, second_leg)))
 
-def get_leg_value(msg):
+def input_int_value(msg):
 # Gets value, while throwing value errors
     while True:
         try:
-            first_leg = int(input(msg + "\n"))
-            return first_leg
+            int_value = int(input(msg + "\n"))
+            return int_value
         except ValueError:
             print("Inputted value is not an integer")
 
