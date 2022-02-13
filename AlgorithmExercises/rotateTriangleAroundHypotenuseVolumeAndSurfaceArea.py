@@ -23,7 +23,7 @@ def input_int_value(msg):
             if(int_value > 0):
                 return int_value
             else:
-                print("Value must be higher than zero")
+                print("Value must be more than zero")
         except ValueError:
             print("Inputted value is not an integer")
 
