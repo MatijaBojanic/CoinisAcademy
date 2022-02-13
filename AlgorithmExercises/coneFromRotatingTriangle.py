@@ -15,7 +15,7 @@ def input_int_value(msg):
             if(int_value > 0):
                 return int_value
             else:
-                print("Inputted value is not an integer")
+                print("Value can not be less than zero")
         except ValueError:
             print("Inputted value is not an integer")
 
