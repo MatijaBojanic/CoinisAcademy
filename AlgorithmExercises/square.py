@@ -12,7 +12,10 @@ def input_int_value(msg):
     while True:
         try:
             int_value = int(input(msg + "\n"))
-            return int_value
+            if (int_value > 0):
+                return int_value
+            else:
+                print("Value must be greater than zero")
         except ValueError:
             print("Inputted value is not an integer")
 
