@@ -20,6 +20,6 @@ def input_int_value(msg):
         except ValueError:
             print("Inputted value is not an integer")
 
-circle = circle(input_int_value("Input circle side length"))
+circle = circle(input_int_value("Input circle radius"))
 print(circle.calculate_perimeter())
 print(circle.calculate_area())
